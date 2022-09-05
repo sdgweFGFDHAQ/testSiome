@@ -2,6 +2,7 @@ package testRedis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import redis.clients.jedis.Jedis;
 
 import javax.annotation.Resource;
 
@@ -21,5 +22,11 @@ public class RedisTest {
         System.out.println(value);
     }
 
+    public static void main(String[] args) {
+
+        Jedis jedis = new Jedis("localhost", 6379);
+//        jedis.auth("123456");
+        System.out.println(jedis.ping());
+    }
 
 }

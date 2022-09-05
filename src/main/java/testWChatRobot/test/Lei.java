@@ -1,4 +1,4 @@
-package testSomthing.test;
+package testWChatRobot.test;
 
 public class Lei {
     public void test(AbstractLei a) {

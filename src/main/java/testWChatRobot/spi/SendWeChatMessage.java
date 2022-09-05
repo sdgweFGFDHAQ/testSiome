@@ -1,4 +1,4 @@
-package testSomthing.spi;
+package testWChatRobot.spi;
 
 import com.alibaba.fastjson.JSONObject;
 

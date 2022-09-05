@@ -1,4 +1,4 @@
-package testSomthing.spi;
+package testWChatRobot.spi;
 
 
 public class AccessToken {

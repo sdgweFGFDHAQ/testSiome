@@ -1,4 +1,4 @@
-package testSomthing.spi;
+package testWChatRobot.spi;
 
 import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.CloseableHttpResponse;

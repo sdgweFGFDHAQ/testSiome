@@ -1,7 +1,4 @@
-package testSomthing;
-
-import java.util.HashMap;
-import java.util.Map;
+package testWChatRobot;
 
 public class ShopQuery {
     public static void main(String[] args) {

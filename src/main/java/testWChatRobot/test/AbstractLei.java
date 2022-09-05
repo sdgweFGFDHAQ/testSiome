@@ -1,4 +1,4 @@
-package testSomthing.test;
+package testWChatRobot.test;
 
 public abstract class AbstractLei {
     public abstract int readerIndex();
