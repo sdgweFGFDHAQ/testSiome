@@ -1,3 +1,6 @@
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
@@ -5,6 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
@@ -35,5 +39,10 @@ public class Test {
 
     public static void main(String[] args) throws IOException {
         readFileBy6();
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = "{\"abc\":\"123\"}";
+        Map map = objectMapper.readValue(json, Map.class);
+        System.out.println(map.toString());
     }
 }
